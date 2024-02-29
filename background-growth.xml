@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+		<name>Growth</name>
+		<description>Growth Background</description>
+		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Bruh</author>
+		<update version="0.0.1">
+			<file name="background-growth.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/backgrounds/background-acolyte.xml" />
+		</update>
+	</info>
+
+	<element name="Growth" type="Background" source="Player’s Handbook" id="ID_BACKGROUND_GROWTH">
+		<description>
+			<p>Your life has been filled with twists and turns, a very wild ride, at this point for you're race your considered old, you've done so many things, met so many people, been on many adventures with friends and foe alike. You've seen a lot and now you've decided on something, you hope for this to possibly be your last adventure.</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Insight, Arcana</li>
+				<li><strong>Languages:</strong>Two of your choice</li>
+				<li><strong>Equipment:</strong>An object that shows your feat you have acheived in the past</li>
+				<li><strong>Feat:</strong>One of your choice</li>
+			</ul>
+			<div element="ID_BACKGROUND_FEATURE_A_WELL_KNOWN_FIGURE" />
+			<h5>SUGGESTED CHARACTERISTICS</h5>
+			<p>People with a background of Growth tend to have been through so much they tend to be wise, understand how things and people work, people of these backgrounds tend to advise using their own experience, and that experience depends on the person, however they've grown.</p>
+		</description>
+		<setters>
+			<set name="short">Insight, Arcana, 2 Languages, Rare Equipment</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INSIGHT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+			<select type="Language" name="Language (Growth)" number="2" supports="Standard||Exotic" />
+			<grant type="Background Feature" id="ID_BACKGROUND_FEATURE_A_WELL_KNOWN_FIGURE" requirements="!ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE"/>
+			<select type="Background Feature" name="Variant Feature" supports="Optional Background Feature" optional="true" />
+			<select type="List" name="Personality Trait" number="2">♦
+				<item id="1">I've always got some advise for everyone around me, I want to be be that trusted person at all times.</item>
+				<item id="2">I'm the kind of person to give my opinion at all times.</item>
+				<item id="3">I love to check out new places to see if any will fit my time after my last adventure.</item>
+				<item id="4">I feel the need to work with any situation, even if i know I can't.</item>
+				<item id="5">I've got something against those who go against growth and change.</item>
+				<item id="6">I know what I like and and I always know how to get it.</item>
+				<item id="7">I've seen the in's and outs of the world, but what because what I've seen, what I've done, I can believe in redeption.</item>
+				<item id="8">I'm older, I've earner the right to complain about some these new fangled things.</item>
+			</select>
+			<select type="List" name="Ideal">
+				<item id="1">Respect. I've been through it all, and I will get the respect I deserve, for everything I did and will do. (Lawful)</item>
+				<item id="2">Comfort. I've seen lots, changed a lot, I've given my time, I'm gonnna be comfortable in my time left. (Neutral)</item>
+				<item id="3">Change. I've seen the world and the way it's changed, it will continue to change, whether I or others like it or not. (Chaotic)</item>
+				<item id="4">Teach. I one day hope to teach those that have come after me, the new people who will make a difference. (Neutral)</item>
+				<item id="5">Peace. I seek peace, for the place around me, the people around me, and myslef. (Good)</item>
+				<item id="6">End. I will end everything, those who have hindered my life, that which hindered my life, then and only then can I finish my growth to the end. (Evil)</item>
+			</select>
+			<select type="List" name="Bond">
+				<item id="1">I will finish giving my knowledge to those who need it before I die.</item>
+				<item id="2">I will cycle back to the place I began my jouney and build amemorial there.</item>
+				<item id="3">There is a small village I owe my life to, I'd give anything to see them again.</item>
+				<item id="4">I will make people laugh! If there's anything I can connect myself to in my life, it's the sound of laughter no matter who from. </item>
+				<item id="5">I will respect the friends wishes, they've passed on and I'm the only one to uphold them.</item>
+				<item id="6">The trinket I hold was given to me by a partner long gone. The trinkest must return to their land before I can pass on to meet them.</item>
+			</select>
+			<select type="List" name="Flaw">
+				<item id="1">People say I'm grumpy, all I'm doing is voicing my opinion.</item>
+				<item id="2">Younger people need to listen to their elders, ergo, me.</item>
+				<item id="3">Those who don't grow, need to, and I will make them.</item>
+				<item id="4">I am inflexible in my thinking.</item>
+				<item id="5">I may not judge a booke by it's cover, but I will Judge it by the first chapter harshly.</item>
+				<item id="6">No body will stop my growth and I'll give anything or anyone to do it.</item>
+			</select>
+		</rules>
+	</element>
+	
+	<element name="Feature: A Well Known Figure" type="Background Feature" source="Bruh" id="ID_BACKGROUND_FEATURE_A_WELL_KNOWN_FIGURE">
+		<supports>Background Feature</supports>
+		<description>
+			<p>As a well-known figure, people on your adventure may recognise you, these people will depend on your feat. The see you as an Idol and a Role-Model, if you ask they can always give you access to information that most people would not give out.</p>
+		</description>
+		<sheet alt="A Well Known Figure" />
+	</element>
+</elements>
