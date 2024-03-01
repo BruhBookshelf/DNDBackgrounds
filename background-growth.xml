@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
-    <info>
+        <info>
 		<name>Growth</name>
 		<description>Growth Background</description>
 		<update version="0.0.1">
-			<file name="background-growth.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/backgrounds/background-acolyte.xml" />
+			<file name="background-growth.xml" url="https://raw.githubusercontent.com/BruhBookshelf/DNDBackgrounds/main/background-growth.xml" />
 		</update>
 	</info>
 
