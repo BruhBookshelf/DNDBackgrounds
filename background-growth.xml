@@ -3,7 +3,6 @@
     <info>
 		<name>Growth</name>
 		<description>Growth Background</description>
-		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/rpg_playershandbook">Bruh</author>
 		<update version="0.0.1">
 			<file name="background-growth.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/backgrounds/background-acolyte.xml" />
 		</update>
